@@ -29,13 +29,7 @@ return require('packer').startup(function(use)
   use("folke/zen-mode.nvim")
   use "terrortylor/nvim-comment"
   use("tpope/vim-fugitive")
-  use({
-        "andrewferrier/wrapping.nvim",
-        config = function()
-            require("wrapping").setup()
-        end,
-    })
-
+  use 'karb94/neoscroll.nvim'
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
