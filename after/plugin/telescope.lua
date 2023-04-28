@@ -1,6 +1,12 @@
 require('telescope').setup{
   defaults = {
 
+
+    file_ignore_patterns = { 
+        "*.meta",        
+    
+    },
+
     -- Default configuration for telescope goes here:
     -- config_key = value,
     mappings = {
@@ -28,6 +34,7 @@ require('telescope').setup{
     -- }
     -- please take a look at the readme of the extension you want to configure
   }
+
 }
 
 

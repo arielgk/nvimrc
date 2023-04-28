@@ -1,4 +1,5 @@
 --vim.opt.guicursor = ""
+vim.g.netrw_list_hide = '^\\%\\v\\.(\\.|git|hg|svn)|\\.(swp|~|meta)$'
 
 vim.opt.nu = true
 vim.opt.relativenumber = true

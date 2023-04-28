@@ -29,9 +29,27 @@ return require('packer').startup(function(use)
   use("folke/zen-mode.nvim")
   use "terrortylor/nvim-comment"
   use("tpope/vim-fugitive")
+
   use 'karb94/neoscroll.nvim'
   use {
-	  'VonHeikemen/lsp-zero.nvim',
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'lambdalisue/fern.vim'
+  
+  -- use {
+  --   'nvim-tree/nvim-tree.lua',
+  --  requires = {
+  --    'nvim-tree/nvim-web-devicons', -- optional
+  --  },
+  --  config = function()
+  --    require("nvim-tree").setup {}
+  --  end
+  -- }
+  --
+  use {
+    'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {
 		  -- LSP Support

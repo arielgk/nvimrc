@@ -14,7 +14,14 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-
+vim.keymap.set("n", ",1", [[:BufferLineGoToBuffer 1<CR>]])
+vim.keymap.set("n", ",2", [[:BufferLineGoToBuffer 2<CR>]])
+vim.keymap.set("n", ",3", [[:BufferLineGoToBuffer 3<CR>]])
+vim.keymap.set("n", ",4", [[:BufferLineGoToBuffer 4<CR>]])
+vim.keymap.set("n", ",5", [[:BufferLineGoToBuffer 5<CR>]])
+vim.keymap.set("n", ",6", [[:BufferLineGoToBuffer 6<CR>]])
+vim.keymap.set("n", ",7", [[:BufferLineGoToBuffer 7<CR>]])
+vim.keymap.set("n", ",8", [[:BufferLineGoToBuffer 8<CR>]])
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -23,7 +30,7 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
-
+-- test
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
